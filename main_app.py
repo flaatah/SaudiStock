@@ -131,10 +131,7 @@ forecast_copy = forecast.copy()
 forecast_arabic = forecast.rename(columns={'ds': "التاريخ", "trend":"اتجاه الأسعار",
 										    "yhat": "القيمة المتنبئة", "yhat_lower": "الحد الأدنى المتنبئ",
 											  "yhat_upper": "الحد الأعلى المتنبئ"})
-# desired_forecast_order = ["الحد الأعلى المتنبئ",  "الحد الأدنى المتنبئ", "القيمة المتنبئة",
-# 					    "اتجاه الأسعار", "التاريخ"]
-#forecast_arabic = forecast_arabic[desired_forecast_order]
-#st.write(forecast_arabic.tail(12))
+
 st.write(forecast_arabic[["الحد الأعلى المتنبئ",  "الحد الأدنى المتنبئ", "القيمة المتنبئة",
 					    "اتجاه الأسعار", "التاريخ"]].tail(12))											  
 # st.write(forecast[['ds', 'trend', 'yhat', 'yhat_lower', 'yhat_upper']]
