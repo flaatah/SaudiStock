@@ -134,13 +134,6 @@ forecast_arabic = forecast.rename(columns={'ds': "التاريخ", "trend":"ات
 
 st.write(forecast_arabic[["الحد الأعلى المتنبئ",  "الحد الأدنى المتنبئ", "القيمة المتنبئة",
 					    "اتجاه الأسعار", "التاريخ"]].tail(12))											  
-# st.write(forecast[['ds', 'trend', 'yhat', 'yhat_lower', 'yhat_upper']]
-#.tail(12))
-# st.write(forecast.columns)
-# st.write(f' عرض توقع الاسعار ل {period} أشهر')
-# fig1 = plot_plotly(m, forecast)
-# st.plotly_chart(fig1)
-
 
 # def plot_forecast_data():
 # 	fig = plot_plotly.Figure()
